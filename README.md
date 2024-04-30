@@ -2,7 +2,7 @@
 The students database consists of 4 tables - students, bridge, chess, and music. The columnar break down of the tables are as follows:
 
 #### students
-ID int
+ID int 
 FullName text
 Sex text
 Class text
