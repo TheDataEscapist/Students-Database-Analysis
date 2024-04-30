@@ -1,16 +1,16 @@
 # Students-Database-Analysis
 The students db consists of 4 tables - students, bridge, chess, and music. The columnar break down of the tables are given as follows:
 
-#### students
+#### students<br>
 ID int, FullName text, Sex text, Class text, HCode text, DCode text, Remission binary(1), MTest int, PTest int, DOB text
 
-#### bridge
+#### bridge<br>
 ID int, FullName text, Sex text, Class text
 
-#### chess
+#### chess<br>
 ID int, FullName text, Sex text, Class text
 
-#### music
+#### music<br>
 ID int, Type text
 
 ### Objectives:<br>
