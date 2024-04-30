@@ -12,3 +12,19 @@ Remission binary(1)
 MTest int
 PTest int
 NewDOB date
+
+#### bridge
+ID int
+FullName text
+Sex text
+Class text
+
+#### chess
+ID int
+FullName text
+Sex text
+Class text
+
+#### music
+ID int
+Type text
