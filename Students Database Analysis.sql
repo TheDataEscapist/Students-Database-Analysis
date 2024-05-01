@@ -100,12 +100,12 @@ where class is not null;
 	FullName	Mtest	Ptest	Higher of Mtest / Ptest 
 	Kaushal		  93	  96				96	
 	Prateek		  99	  92 				99
-1. Higher of Mtest and Ptest for each student*/
+1. Higher of Mtest and Ptest for each student.*/
 select FullName, Mtest, Ptest,
 greatest(mtest,ptest) as 'Higher of Mtest / Ptest'
 from students;
 
-/*2. Among the higher values, find the highest scorer*/
+/*2. Among the higher values, find the highest scorer.*/
 select id, fullname, HigherScore
 from (select id, fullname, mtest, ptest,
 	  greatest(mtest,ptest) as HigherScore,
@@ -113,12 +113,12 @@ from (select id, fullname, mtest, ptest,
 	  from students) as TempTable
 where Rnk = 1;
 
-/*Task 16: Find average age of all boys students*/
+/*Task 16: Find average age of all boy students.*/
 select floor(Avg(timestampdiff(Year, NewDOB, Current_Date()))) as AvgAge
 from students
 where sex = "m";
 
-/*Task 17: Create a monthly birthday frequency table*/
+/*Task 17: Create a monthly birthday frequency table.*/
 select monthname(NewDOB), count(*)
 from students
 group by monthname(NewDOB)
