@@ -113,7 +113,7 @@ from (select id, fullname, mtest, ptest,
 	  from students) as TempTable
 where Rnk = 1;
 
-/*Task 16: Find average age of all boy students.*/
+/*Task 16: Find the average age of all boy students.*/
 select floor(Avg(timestampdiff(Year, NewDOB, Current_Date()))) as AvgAge
 from students
 where sex = "m";
