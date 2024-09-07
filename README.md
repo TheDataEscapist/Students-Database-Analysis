@@ -2,7 +2,7 @@
 ### Situation:
 Analyzed a Students Database with four tables - students, bridge, chess, and music - to clean data and derive insightful metrics.
 
-### Task
+### Task:
 Clean data (handle missing values, standardize dates) and thereby-
 1. List the number of girls per district.
 2. Determine max and min test scores of Class 1 students per district.
