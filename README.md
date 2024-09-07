@@ -1,34 +1,30 @@
 # Students-Database-Analysis
-The students db consists of 4 tables - students, bridge, chess, and music. The columnar break down of the tables are given as follows:
+### Situation:
+Analyzed a Students Database with four tables - students, bridge, chess, and music - to clean data and derive insightful metrics.
 
-#### students<br>
-ID int, FullName text, Sex text, Class text, HCode text, DCode text, Remission binary(1), MTest int, PTest int, DOB text
+### Task
+Clean data (handle missing values, standardize dates) and thereby-
+1. List the number of girls per district.
+2. Determine max and min test scores of Class 1 students per district.
+3. Compute average Math scores of boys per class, excluding classes with <3 boys.
+4. Sort boys of Class 1A by name.
+5. List 1B students by residential district.
+6. List the number of students per district.
+7. Organize and order boys by house and class.
+8. Identify the top 10% scoring girls in Math.
+9. Extract the second highest Math scorer.
+10. Count unique student names.
+11. Categorize students as dumb or scholar based on Math scores.
+12. Find the 4th lowest, combined Math and Physics, scorer.
+13. Assign roll numbers within each class alphabetically.
+14. Further categorize students as Scholars, Average, and Dumbs.
+15. Extract the higher of Math and Physics scores per student and identify the top scorer.
+16. Calculate average age of boy students.
+17. Create a monthly birthday frequency table.
 
-#### bridge<br>
-ID int, FullName text, Sex text, Class text
+### Action:
+1. Implemented data cleaning using DDL and DML commands.
+2. Applied GROUP BY, ORDER BY, HAVING, LIMIT, IF(), DISTINCT, GREATEST(), CTE, Aliases, IS NOT NULL, User-defined function, Aggregate Functions, and Window Functions.
 
-#### chess<br>
-ID int, FullName text, Sex text, Class text
-
-#### music<br>
-ID int, Type text
-
-### Objectives:<br>
-Treating/cleaning the data (missing values, changing date data types, etc.) and thereby -
-1. list the number of girls in each district.
-2. list the max and min test score of Class 1 students in each district.
-3. list the average Math test score of the boys in each class. The list should not contain class with less than 3 boys.
-4. list the boys of class 1A, sorted by their names.
-5. list the 1B students by their residential district.
-6. list the number of students of each district (in desc. order).
-7. list the boys of each house sorted by the classes. (2-level ordering)
-8. list the top 10% scoring girls students in Maths.
-9. print the name of the second highest scorer in Maths Test.
-10. calculate how many students have unique names.
-11. extract the number of dumb and scholar students (Scholar Criteria – Mtest > 95. Everyone else is dumb).
-12. find the 4th lowest scorer in Maths and Phy tests combined.
-13. assign a roll number to each student after sorting their name alphabetically within each class.
-14. further categorize the students into 3 categories: Scholars - more than 95, Average - between 90 and 94, and Dumbs - less than 90.
-15. get the higher of Mtest and Ptest for each student, and among the higher values, find the highest scorer.
-16. find the average age of all boy students.
-17. create a monthly birthday frequency table.
+### Result:
+Provided valuable insights into student performance and demographics, demonstrating advanced SQL skills.
